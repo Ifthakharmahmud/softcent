@@ -1,0 +1,53 @@
+/* Hero Section Style  */
+section.hero {
+    margin-top: 70px;
+}
+
+.hero-content {
+    width: 580px;
+}
+
+h1.hero-title {
+    font-family: Overlock;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+    color: #040415;
+    position: relative;
+}
+
+h1.hero-title:before {
+    content: url(https://i.ibb.co/B4PZdjt/Underline.png);
+    position: absolute;
+    top: 25px;
+}
+
+p.hero-desc {
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 0;
+}
+
+.light-box{
+    background: url("https://i.ibb.co/rv880p7/hero-video-layout.png");
+    height: 568px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 68px;
+}
+.light-box-icon {
+    width: 67px;
+    height: 67px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 10px #4b4e525e;
+}

@@ -1,24 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import ReactDOM from "react-dom/client";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Header from './components/Header/Header';
+import Customers from './components/Customers/Customers';
+import WhatWeDo from './components/WhatWeDo/WhatWeDo';
+import Products from './components/Products/Products';
+import Pricing from './components/Pricing/Pricing';
+import About from './components/About/About';
+import Technology from './components/Technology/Technology';
+import Footer from './components/Footer/Footer';
+import './Style.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+  
+
+      <Header></Header>
+      <Customers></Customers>
+      <WhatWeDo></WhatWeDo>
+      <Products></Products>
+      <Pricing></Pricing>
+      <About></About>
+      <Technology></Technology>
+      <Footer></Footer>
+
+
+      {/* Navigation Setup s */}
+      {/* <BrowserRouter>
+        <Routes>
+          
+        </Routes>
+      </BrowserRouter> */}
+      
+    
+    </>
   );
 }
 

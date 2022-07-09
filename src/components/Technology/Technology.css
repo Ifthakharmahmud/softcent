@@ -1,0 +1,67 @@
+/* Our Dev Technology Style  */
+.technology{
+    margin-top: 150px !important;
+    margin-bottom: 120px !important;
+    
+}
+
+.technology h3.section-title{
+    width: 100%;
+}
+
+.technology h3.section-title:before{
+    width: 300px;
+}
+
+.technology-tabs {
+    margin-top: 80px;
+}
+
+ul.tab-menu {
+    display: flex;
+    gap: 120px;
+}
+
+ul.tab-menu li {
+    font-family: Nunito;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #040415;
+    border-bottom: 4px solid rgba(45, 91, 255, 0.1);
+    transition: 300ms;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+
+ul.tab-menu li:hover {
+    border-color: #2D5BFF;
+}
+
+.tab-content {
+    margin-top: 100px;
+}
+
+.tab-data {
+    display: flex;
+    gap: 150px;
+}
+
+
+/* Our Design Technology Style  */
+.design-technology{
+    margin-top: 120px !important;
+}
+
+.design-technology h3.section-title:before{
+    width: 400px;
+}
+
+.design-tabs{
+    margin-top: 120px;
+}
+
+.technology-images {
+    display: flex;
+    gap: 150px;
+}

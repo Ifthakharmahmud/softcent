@@ -1,0 +1,50 @@
+/* What We Do Style  */
+section.what-we-do {
+    margin-top: 165px;
+    margin-bottom: 165px;
+}
+
+section.what-we-do h3.section-title {
+    margin: 0;
+    width: 194px;
+}
+
+section.what-we-do h3.section-title::before {
+    width: 194px;
+}
+
+.services {
+    margin-top: 80px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+.service-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-title h4 {
+    font-family: Overlock;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+ul.service-list {
+    margin-top: 30px;
+}
+
+ul.service-list li {
+    font-family: Nunito;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #040415CC;
+    margin-top: 25px;
+}

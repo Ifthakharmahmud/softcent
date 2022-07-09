@@ -1,0 +1,137 @@
+/* Pricing Style  */
+.pricing{
+    padding: 150px 0;    
+}
+
+.pricing-title .section-title {
+    width: 100%;
+}
+
+.pricing-title .section-title::before {
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    top: 70px;
+}
+.pricing-title p {
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 50px;
+    color: #04041599;
+}
+
+.pricing-title {
+    width: 580px;
+    margin: 0 auto;
+    text-align: center;
+}
+.tab-toggler {
+    width: 50%;
+    margin: 40px auto 80px auto;
+    text-align: center;
+}
+
+button.yearly {
+    height: 48px;
+    width: 135px;
+    border-radius: 7px;
+    margin-left: 20px;
+    color: #fff;
+    cursor: pointer;
+    background: #2D5BFF;
+    border: 1px solid #2D5BFF;
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+button.monthly {
+    height: 48px;
+    width: 135px;
+    border-radius: 7px;
+    background: #3088FF29;
+    border: 1px solid #3088FF29;
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.pricing-card {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    gap: 45px;
+}
+
+.single-card {
+    width: 350px;
+    background: #3088FF0D;
+    border-radius: 12px;
+    padding: 16px 10px 30px 20px;
+}
+
+.card-title h5 {
+    font-family: Overlock;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    color: #040415;
+    position: relative;
+    display: inline-block;
+}
+
+.card-title h5:before {
+    content: '';
+    width: 100%;
+    height: 10px;
+    background: #F6A00E;
+    position: absolute;
+    top: 23px;
+    z-index: -1;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card-title p {
+    font-family: Overlock;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.single-card.active-card {
+    background: #2D5BFF;
+    color: #fff;
+}
+
+.single-card.active-card h5 {
+    color: #fff;
+    z-index: 1;
+}
+
+.single-card.active-card li {
+    color: #ffff;
+}
+
+ul.service-list li {
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+ul.service-list svg {
+    color: #040415CC;
+    font-size: 12px;
+    margin-right: 8px;
+}
+.single-card.active-card li svg {
+    color: #fff;
+    font-size: 12px;
+    margin-right: 8px;
+}

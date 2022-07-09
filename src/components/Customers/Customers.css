@@ -1,0 +1,15 @@
+/* Customers Style  */
+.customers{
+    margin-top:125px !important;
+}
+
+.customers-logo{
+    margin-top: 75px;
+}
+
+.customers-logo {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: space-between;
+}

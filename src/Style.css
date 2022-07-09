@@ -1,0 +1,370 @@
+/*
+Template Name: Softcent
+Template URL: #
+Author: Iftekhar Mahmud
+Author URL: #
+
+
+[Table of contents]
+
+Typography
+Responsive CSS
+Component Style
+	- Header CSS
+	- Customers CSS
+	- WhatWeDo CSS
+	- Products CSS
+	- Pricing CSS
+	- About CSS
+	- Technology CSS
+	- Footer CSS
+
+*/
+ 
+
+
+/* Typography
+==================================== */
+body{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Overlock', cursive;
+    padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	font-family: 'Overlock', cursive;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+/* Common Style
+==================================== */
+
+.mw{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.body-class{
+	background: #f5f5f5;
+}
+h3.section-title {
+    font-family: Overlock;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: center;
+    position: relative;
+	width: 230px;
+	margin: 0 auto;
+}
+
+h3.section-title:before {
+	height: 25px;
+	width: 230px;
+    content: '';
+	position: absolute;
+	top: 50px;
+	background: url(https://i.ibb.co/B4PZdjt/Underline.png);
+	background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+	
+}
+
+/* Responsive CSS
+==================================== */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* Extra Semi-large devices */
+@media only screen and (max-width: 1100px) {
+	/* Pricing Card  */
+	.pricing{
+		padding: 50px 0;
+	}
+	.pricing-card{
+		grid-template-columns: auto auto;
+		justify-content: center;
+	}
+
+	/* Carousel  */
+	.single-slider{
+		flex-direction: column;
+	}
+	.single-slider {
+		text-align: center;
+	}
+	
+	.slider-content {
+		width: 70%;
+		margin: 0 auto;
+	}
+	
+	.single-slider {
+		margin-top: 60px;
+	}
+	
+	.slider-img {
+		display: none;
+	}
+	
+	p.slider-desc {
+		font-size: 15px;
+		line-height: 28px;
+	}
+	
+	p.slider-desc:after {
+		right: -65px;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+	/* Common  */
+	.mw{
+		padding: 20px;
+	}
+	/* Logo & Nav  */
+	.logo-nav {
+		flex-direction: column;
+	}
+	/* What we do  */
+	section.what-we-do{
+		margin: 30px 0;
+	}
+	section.what-we-do h3.section-title {
+		margin: 0 auto;
+	}
+
+	/* Products  */
+	.desc-btn{
+		flex-direction: column;
+	}
+	.title-section {
+		text-align: center;
+	}
+	
+	.desc-btn {
+		text-align: center;
+		width: 70%;
+		margin: 0 auto;
+	}
+	
+	.desc-btn button {
+		margin: 10px auto;
+	}
+
+	/* Our Customers  */
+
+	.customers-logo {
+		grid-template-columns: auto auto !important;
+		gap: 20px;
+		justify-content: space-evenly;
+	}
+	.customers-logo img {
+		width: 90%;
+	}
+
+	 /* Services  */
+	 .services {
+		justify-content: space-evenly;
+		grid-template-columns: auto auto;
+	}
+
+	/* Technology  */
+	section.technology {
+		margin-top: 30px !important;
+	}
+	ul.tab-menu {
+		gap: 35px;
+	}
+	ul.tab-menu li{
+		font-size: 15px;
+	}
+	.tab-content{
+		margin-top: 40px;
+	}
+	.design-tabs {
+		margin-top: 40px;
+	}
+	.tab-data{
+		row-gap: 40px;
+    	column-gap: 60px;
+    	flex-wrap: wrap;
+		justify-content: center;
+	}
+	.technology-images {
+		flex-wrap: wrap;
+		column-gap: 60px;
+		row-gap: 40px;
+		justify-content: center;
+	}
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	/* Navigation  */
+	.logo-nav nav ul{
+		column-gap: 20px;
+	}
+	.logo-nav nav ul li a{
+		font-size: 14px;
+	}
+	.logo-nav nav ul li:last-child {
+		width: 140px;
+		padding: 8px 0;
+	}
+
+	/* Hero Area  */
+	section.hero {
+		margin-top: 20px;
+		text-align: center;
+	}
+	h1.hero-title {
+		font-size: 30px;
+		line-height: 35px;
+	}
+	
+	h1.hero-title:before {
+		content: '';
+	}
+
+	
+	.hero-content {
+		margin: 0 auto;
+		width: 100%;
+		padding: 0 20px;
+	}
+
+	p.hero-desc{
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 0;
+		margin-top: 20px;
+	}
+
+	.light-box{
+		margin-top: 30px;
+		height: 300px;
+	}
+
+	/* Carousel  */
+	p.slider-desc:after {
+		content: '';
+	}
+	p.slider-desc:before {
+		content: '';
+	}
+
+	ul.slick-dots {
+		display: none !important;
+	}
+
+	.author{
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+
+
+	/* Pricing Card  */
+	.pricing-card{
+		grid-template-columns: auto;
+		justify-content: center;
+	}
+
+	.pricing-title {
+		width: 100%;
+		padding: 15px;
+		font-size: 20px !important;
+	}	
+	
+	
+	h3.section-title::before {
+		content: '';
+		background: transparent;
+	}
+	
+	.title-section img {
+		display: none;
+	}
+	.tab-toggler{
+		width: 90%;
+	}
+
+	/* Technology  */
+	.technology-tabs{
+		margin-top: 30px;
+	}
+	ul.tab-menu{
+		justify-content: space-around;
+	}
+
+	/* Footer  */
+	.footer-top p br {
+		display: none;
+	}
+	
+	.footer-top {
+		flex-direction: column;
+	}
+	
+	.footer-top button {
+		margin-top: 16px;
+		width: 115px;
+		font-size: 11px;
+		height: 40px;
+	}
+	
+	.footer-top p {
+		font-size: 20px;
+	}
+	
+	.footer-bottom div {
+		text-align: center;
+	}
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+	/* Responsive Menu  */
+	.toggle-btn{
+		display: flex !important;
+	}
+
+	.logo-nav nav ul{
+		display: none !important;
+		flex-direction: column;
+		margin-top: 10px;
+		gap: 15px;
+	}
+
+	/* Services  */
+	.services {
+		grid-template-columns: auto;
+		gap: 30px;
+	}
+
+	/* Technology  */
+	ul.tab-menu li {
+		font-size: 10px;
+		line-height: 12px;
+	}
+}
+
+
